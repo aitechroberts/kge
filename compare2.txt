@@ -1,0 +1,15 @@
+Document ID: 8800431443
+  Relation: {'subject': 'Swan Defence', 'relation': 'inks pact with', 'object': 'Varex Imaging Corporation'}
+  Relation: {'subject': 'Swan Defence', 'relation': 'inks pact with', 'object': 'SDHI'}
+  Relation: {'subject': 'Varex Imaging Corporation', 'relation': 'based in', 'object': 'Salt Lake City, USA'}
+  Relation: {'subject': 'SDHI', 'relation': 'based in', 'object': 'Pipavav, Gujarat'}
+
+Document ID: 8799993029
+  Relation: {'subject': 'Varex Imaging Corporation', 'relation': 'develops', 'object': 'Pipavav, Gujarat'}
+  Relation: {'subject': 'Varex Imaging Corporation', 'relation': 'develops', 'object': 'Salt Lake City, UT, USA'}
+  Relation: {'subject': 'SDHI', 'relation': 'signs an agreement with', 'object': 'Varex Imaging Corporation'}
+  Relation: {'subject': 'Varex Imaging Corporation', 'relation': 'based in', 'object': 'Salt Lake City, UT, USA'}
+  Relation: {'subject': 'SDHI', 'relation': 'manufactures', 'object': 'High-energy imaging systems'}
+  Relation: {'subject': 'SDHI', 'relation': 'manufactures', 'object': 'Pipavav, Gujarat'}
+  Relation: {'subject': 'SDHI', 'relation': 'operates', 'object': 'Pipavav, Gujarat'}
+  Relation: {'subject': 'Varex Imaging Corporation', 'relation': 'develops', 'object': 'High-energy imaging systems'}

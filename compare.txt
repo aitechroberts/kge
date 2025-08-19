@@ -1,0 +1,39 @@
+Qwen3 1.7b reasoning enabled
+
+SDHI/Varex Agreement
+Direct vLLM:
+Document ID: 8799993029
+  Relation: {'subject': 'SDHI', 'relation': 'signed agreement with', 'object': 'Varex Imaging Corporation'}
+  Relation: {'subject': 'Varex Imaging Corporation', 'relation': 'based in', 'object': 'Salt Lake City, UT, USA'}
+  Relation: {'subject': 'SDHI', 'relation': 'exclusively manufacture', 'object': "Varex's high-energy imaging systems"}
+  Relation: {'subject': 'SDHI', 'relation': 'facility in', 'object': 'Pipavav, Gujarat'}
+  Relation: {'subject': 'SDHI', 'relation': 'supports', 'object': 'Make in India initiative'}
+  Relation: {'subject': 'SDHI', 'relation': 'operates', 'object': 'dry dock'}
+  Relation: {'subject': 'SDHI', 'relation': 'fabrication capacity', 'object': '144,000 tons per annum'}
+  Relation: {'subject': 'Varex Imaging Corporation', 'relation': 'specializes in', 'object': 'linear accelerators'}
+  Relation: {'subject': 'Varex Imaging Corporation', 'relation': 'specializes in', 'object': 'imaging technology'}
+    "content": "Mumbai : Swan Defence and Heavy Industries Limited (SDHI) and Varex Imaging Corporation have signed an agreement 
+    to manufacture cargo and vehicle inspection systems in India. Varex Imaging Corporation based in Salt Lake City, UT, USA, 
+    is a global leader in linear accelerators and imaging technology, known for its innovative and dependable solutions.\n\n
+    As part of the collaboration, SDHI will exclusively manufacture Varex's high-energy imaging systems at its facility in Pipavav, Gujarat.
+     These systems are designed to inspect all types of cargo at both land and sea ports. This strategic partnership will help meet the growing 
+     demand for advanced inspection systems among security agencies across India. Additionally, it supports the Make in India initiative by
+     promoting indigenous manufacturing and enabling access to world-class security imaging solutions.\n\nSDHI is a leading shipbuilding and 
+     heavy fabrication company in India. The shipyard operates the country's largest dry dock (662m x 65m) and has an impressive fabrication 
+     capacity of 144,000 tons per annum - providing an unmatched advantage in fulfilling India's maritime and industrial ambitions.",
+
+
+
+KGGen:
+Document ID: 8800431443
+  Relation: {'subject': 'SDHI (Swan Defence and Heavy Industries Limited)', 'relation': 'located in', 'object': 'Pipavav, Gujarat'}
+  Relation: {'subject': 'Varex Imaging Corporation', 'relation': 'based in', 'object': 'Salt Lake City, USA'}
+  Relation: {'subject': 'SDHI (Swan Defence and Heavy Industries Limited)', 'relation': "operates the country's largest dry dock", 'object': 'India'}
+
+    "content": "New Delhi, Aug 4 (PTI) Swan Defence and Heavy Industries Limited (SDHI) and Varex Imaging Corporation have signed an agreement to 
+    manufacture cargo and vehicle inspection systems in India.\n\nVarex Imaging Corporation is based in Salt Lake City, USA.\n\n
+    As part of the collaboration, SDHI in a statement said it will exclusively manufacture Varex's high-energy imaging systems at its facility
+    in Pipavav, Gujarat.\n\nThese systems are designed to inspect all types of cargo at land and sea ports. This strategic partnership will 
+    help meet the growing demand for advanced inspection systems among security agencies across India, SDHI added.\n\nSDHI, formerly known as 
+    Reliance Naval and Engineering Limited, is a shipbuilding and heavy fabrication company in India.\n\nThe shipyard operates the country's 
+    largest dry dock (662m x 65m) and has the fabrication capacity of 1,44,000 tonnes per annum. PTI BKS HVA",
