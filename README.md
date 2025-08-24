@@ -4,12 +4,13 @@ An optimized system for creating knowledge graphs from text through information 
 
 ## Features
 
+- **DSPy-Powered Optimization**: Uses DSPy framework for optimized LLM interactions and automatic prompt engineering
 - **Advanced Text Processing**: Intelligent chunking with sentence boundary preservation
 - **LLM-Powered Extraction**: Uses state-of-the-art language models with guided JSON decoding
 - **Entity Resolution**: Automatic deduplication and merging of similar entities
 - **Graph Optimization**: Confidence-based filtering and graph structure optimization
 - **Multiple Storage Backends**: Support for Neo4j, Kuzu, and in-memory storage
-- **Performance Optimizations**: Caching, batch processing, and model optimizations
+- **Performance Optimizations**: Caching, batch processing, and DSPy optimization
 - **REST API**: Complete API for integration with other systems
 - **Comprehensive Testing**: Full test suite with unit and integration tests
 
@@ -31,20 +32,21 @@ pip install -e .
 
 ### Basic Usage
 
-```python
-from kge import KGEPipeline, KGEConfig
+#### DSPy-Powered Pipeline (Recommended)
 
-# Create configuration
-config = KGEConfig(
-    model_path="Qwen/Qwen2.5-1.5B-Instruct-AWQ",
-    storage_backend="memory",  # or "neo4j", "kuzu"
-    chunk_size=2500,
-    enable_entity_resolution=True
+```python
+from kge import create_pipeline
+
+# Create a DSPy-powered pipeline with OpenAI
+pipeline = create_pipeline(
+    model_type="openai",
+    model_name="gpt-3.5-turbo",
+    api_key="your-openai-key",
+    storage_backend="memory"
 )
 
-# Initialize pipeline
-with KGEPipeline(config) as pipeline:
-    # Process text
+# Process text
+with pipeline:
     text = """
     Apple Inc is a technology company based in Cupertino, California.
     Tim Cook is the CEO of Apple Inc. The company develops the iPhone,
@@ -57,8 +59,25 @@ with KGEPipeline(config) as pipeline:
     print(f"Extracted {result['relationships_final']} relationships")
     
     # Query the knowledge graph
-    nodes = pipeline.storage.query_nodes({"type": "Company"})
-    edges = pipeline.storage.query_edges({"relation": "WORKS_FOR"})
+    nodes = pipeline.query_graph("Apple")
+```
+
+#### Original Pipeline (Legacy)
+
+```python
+from kge import OriginalKGEPipeline, KGEConfig
+
+# Create configuration
+config = KGEConfig(
+    model_path="Qwen/Qwen2.5-1.5B-Instruct-AWQ",
+    storage_backend="memory",
+    chunk_size=2500,
+    enable_entity_resolution=True
+)
+
+# Initialize pipeline
+with OriginalKGEPipeline(config) as pipeline:
+    result = pipeline.process_text(text, document_id="apple_doc")
 ```
 
 ### API Server

@@ -34,6 +34,7 @@ class Relationship:
     relation: str
     target: str
     confidence: float = 1.0
+    description: Optional[str] = None
     source_text: Optional[str] = None
     metadata: Optional[Dict[str, Any]] = None
     

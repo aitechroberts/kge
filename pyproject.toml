@@ -1,6 +1,6 @@
 [project]
 name = "kge"
-version = "0.1.0"
+version = "0.2.0"
 description = "Knowledge Graph Extraction system using Large Language Models"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -24,7 +24,7 @@ dependencies = [
     "apscheduler>=3.11.0",
     "azure-identity==1.24.0",
     "azure-storage-blob==12.26.0",
-    "dspy-ai==2.6.27",
+    "dspy-ai>=3.0.0",
     "duckdb==1.2.0",
     "fastapi>=0.104.0",
     "huggingface-hub>=0.34.4",
